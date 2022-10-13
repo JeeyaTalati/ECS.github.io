@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="Log.js"></script>
+  <script src="Box.js"></script>
+
+</head>
+
+<body>
+
+  <a-scene background="color:black;">
+    <a-camera position="0 0 40"></a-camera>
+    <a-entity log>
+    </a-entity>
+    <a-entity log = "message : Hi , it's me. ">
+    </a-entity>
+    <a-entity postion="10 0 0" move-box>
+      <a-box ></a-box>
+    </a-entity>
+
+    <a-entity postion="20 20 0" move-box = "moveX : -30">
+      <a-sphere></a-sphere>
+    </a-entity>
+  </a-scene>
+
+
+</body>
+
+</html>
